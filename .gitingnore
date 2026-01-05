@@ -1,0 +1,124 @@
+# ----------------------------------------------------------------------
+# 1. OS & System Files (운영체제 자동 생성 파일)
+# ----------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ----------------------------------------------------------------------
+# 2. IDE & Editor Configuration (개인별 개발 환경 설정)
+# ----------------------------------------------------------------------
+# VS Code (팀 공유 설정인 .vscode/settings.json, tasks.json은 포함할 수도 있음)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / JetBrains (Java, Kotlin, Python, WebStorm)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+
+# ----------------------------------------------------------------------
+# 3. Security & Environment Variables (보안 - 절대 커밋 금지)
+# ----------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+id_rsa
+secrets.json
+
+# ----------------------------------------------------------------------
+# 4. Logs (로그 파일)
+# ----------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----------------------------------------------------------------------
+# 5. Language Specific - JavaScript / Node.js / TypeScript
+# ----------------------------------------------------------------------
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.nuxt/
+.vuepress/dist
+.cache/
+package-lock.json # (권장: 라이브러리 버전 고정을 위해 커밋하는 것이 좋으나, 예제 성격에 따라 제외 가능)
+yarn.lock         # (상동)
+
+# ----------------------------------------------------------------------
+# 6. Language Specific - Python
+# ----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+.pytest_cache/
+*.egg-info/
+.coverage
+
+# ----------------------------------------------------------------------
+# 7. Language Specific - Java / Kotlin / Gradle / Maven
+# ----------------------------------------------------------------------
+target/
+build/
+.gradle/
+!gradle-wrapper.jar # Wrapper는 포함하는 것이 좋음 (다른 환경에서 실행 보장)
+.mvn/
+
+# ----------------------------------------------------------------------
+# 8. Language Specific - C / C++ / Go
+# ----------------------------------------------------------------------
+*.o
+*.obj
+*.dll
+*.exe
+*.so
+*.dylib
+# Go
+vendor/   # (Go Modules 사용 시 보통 벤더링하지 않음)
+go.sum    # (버전 관리를 위해 포함 권장, 필요 없다면 주석 해제)
+
+# ----------------------------------------------------------------------
+# 9. Archives (압축 파일)
+# ----------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
